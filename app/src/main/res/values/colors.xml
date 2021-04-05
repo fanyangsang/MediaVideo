@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3FDF9F</color>
+    <color name="colorPrimaryDark">#3FDF9F</color>
+    <color name="colorAccent">#3FDF9F</color>
+    <color name="colorGray">#666666</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#111226</color>
+    <color name="color333">#333333</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorSpringGreen">#3cb371</color>
+    <color name="colorLightGreen">#90EE90</color>
+    <color name="colorLawnGreen">#7CFC00</color>
+    <color name="color9a">#9a9a9a</color>
+    <color name="colorBrulyWood">#DEB887</color>
+    <color name="colorFD9">#FD9000</color>
+    <color name="colorF87">#FB704B</color>
+    <color name="colorThemeBg">#FFFAF0</color>
+    <color name="color705">#7058E7</color>
+    <color name="colorTheme">#3FDF9F</color>
+    <color name="colorCCC">#cccccc</color>
+    <color name="colorF8F">#F8F7FC</color>
+    <color name="colorAAA">#AAAAAA</color>
+    <color name="color666">#666666</color>
+    <color name="colorRed">#FF615E</color>
+    <color name="colorDefaultBTN">#F9B34C</color>
+    <color name="colorPurple">#6E21D1</color>
+    <color name="colorBlack313">#313645</color>
+    <color name="colorLoginGreen">#28C08C</color>
+    <color name="colorTextColor">#656565</color>
+    <color name="colorF5F">#f5f5f5</color>
+    <color name="color989">#989899</color>
+    <color name="colorACA">#ACACAC</color>
+    <color name="fwPrimaryColor">#4666A9</color>
+</resources>
