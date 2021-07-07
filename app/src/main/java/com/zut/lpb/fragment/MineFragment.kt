@@ -2,6 +2,7 @@ package com.zut.lpb.fragment
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.text.TextUtils
 import android.view.View
 import com.blankj.utilcode.util.SPUtils
 import com.zut.lpb.R
@@ -17,8 +18,11 @@ class MineFragment : BaseFragment() {
     }
 
     override fun initView(view: View?) {
-
+        if(!TextUtils.isEmpty(SPUtils.getInstance().getString("token")) ){
+            tv_mobile.text = "用户_"+SPUtils.getInstance().getString("token").substring(0,9)
+        }
     }
+
 
     override fun initListener(view: View?) {
         rl_about_us!!.setOnClickListener {
@@ -31,10 +35,26 @@ class MineFragment : BaseFragment() {
             startActivity(intent1)
         }
 
+        rl_service_email!!.setOnClickListener{
+          emailDialog()
+        }
+
         rl_exit.setOnClickListener { quitDialog() }
     }
 
     override fun initData() {
+    }
+
+    /**
+     * 显示邮箱的弹窗
+     */
+    private fun emailDialog(){
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle("联系邮箱")
+        builder.setMessage("请发送邮件至lipengbo@gamil.com")
+        builder.setPositiveButton("确定",null)
+        val dialog = builder.create()
+        dialog.show()
     }
 
     /**

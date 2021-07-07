@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
         android:layout_marginLeft="15dp"
-        android:src="@drawable/ic_arrow_left" />
+        android:src="@drawable/ic_arrow_left_white" />
 
     <TextView
         android:id="@+id/tv_titles"

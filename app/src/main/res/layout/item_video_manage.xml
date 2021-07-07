@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_white_10"
+    android:layout_marginTop="10dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_goods_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_goods_image"
+        android:text="product name"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_product_desc"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_goods_image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="product name"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_remove"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:background="@drawable/shape_9a_7"
+        android:layout_centerVertical="true"
+        android:text="移除"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_video_tag"
+        android:layout_marginLeft="5dp"
+        android:textSize="9sp"
+        android:layout_toRightOf="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:background="@drawable/shape_theme_4"/>
+
+    <TextView
+        android:id="@+id/tv_music_tag"
+        android:layout_marginLeft="5dp"
+        android:textSize="9sp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音频"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:background="@drawable/shape_red_4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -26,8 +26,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/icon_header"
                 android:layout_marginLeft="16dp"/>
 
@@ -203,6 +203,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:visibility="gone"
                 android:id="@+id/rl_help_center"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"

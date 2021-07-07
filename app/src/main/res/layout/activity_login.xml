@@ -202,10 +202,10 @@ create an account."
             <TextView
                 android:id="@+id/iv_login"
                 style="@style/btn_style"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:layout_below="@+id/ll_login"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
                 android:text="登录" />
 
             <TextView

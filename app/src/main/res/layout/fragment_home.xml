@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/colorF5F"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_default"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_marginRight="10dip"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_search_wapper">
+            <EditText
+                android:id="@+id/ed_search_name"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入视频名称..."
+                android:imeOptions="actionSearch"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorF5F"
+                android:background="@null"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_search"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:text="搜索"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/shape_theme_7"/>
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/tv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="2dp"
+        app:image_scale_type="fit_xy" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_video_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>

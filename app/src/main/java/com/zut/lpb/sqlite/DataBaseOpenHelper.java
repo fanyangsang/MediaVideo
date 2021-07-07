@@ -37,8 +37,11 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
         //创建视频表
         String videoSql = "create table video(" +
                 "id integer primary key autoincrement," +
-                "type char(1)," + //0为视频，1为音频
-                "url varchar(256))";
+                "name varchar(255)," +
+                "type varchar(2)," + //0为视频，1为音频
+                "create_time varchar(255)," +
+                "video_cover varchar(255)," + //视频封面的链接
+                "url varchar(255))";
         db.execSQL(videoSql);
     }
 
